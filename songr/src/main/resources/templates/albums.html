@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,12 +8,15 @@
 </head>
 <body>
 <h1>Welcome to the albums list!</h1>
-<div th:each="album : ${albums}">
-    <p>Album Title: <span th:text=${album.title}></span> </p>
-    <p>Album Artist: <span th:text=${album.artist}></span></p>
-    <p>Songs Count: <span th:text=${album.songCount}></span></p>
-    <p>Album Length: <span th:text=${album.length}></span></p>
-    <img th:src=${album.imageUrl}>
+<div id="did">
+    <div class="newDiv" th:each="album : ${albums}">
+        <p>Album ID: <span th:text=${album.id}></spanth:text></span></p>
+        <p>Album Title: <span th:text=${album.title}></span> </p>
+        <p>Album Artist: <span th:text=${album.artist}></span></p>
+        <p>Songs Count: <span th:text=${album.songCount}></span></p>
+        <p>Album Length: <span th:text=${album.length}></span></p>
+        <img th:src=${album.imageUrl}>
+    </div>
 </div>
 </body>
 </html>
