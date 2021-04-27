@@ -4,18 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="style.css">
+
 </head>
-<body>
-<h1>Welcome to the albums list!</h1>
+<body style="background-image: url('https://github.com/Aseel-Banna/Full-Stack-Web-Apps/blob/lab13/songr/songr/src/main/resources/songs.jpg?raw=true'); background-repeat: no-repeat;
+  background-size: cover">
+<p></p>
+<h1 style="text-align:center; color:white; font-size:xx-large">Welcome to the albums list!</h1>
 <div id="did">
-    <div class="newDiv" th:each="album : ${albums}">
-        <p>Album ID: <span th:text=${album.id}></spanth:text></span></p>
-        <p>Album Title: <span th:text=${album.title}></span> </p>
-        <p>Album Artist: <span th:text=${album.artist}></span></p>
-        <p>Songs Count: <span th:text=${album.songCount}></span></p>
-        <p>Album Length: <span th:text=${album.length}></span></p>
-        <img th:src=${album.imageUrl}>
+    <div style="text-align:center; margin-left:auto; margin-right:auto; border: 4px solid white; width:500px; margin-bottom:20px" th:each="album : ${albums}">
+        <p style="text-align:center; color:white; font-size:x-large">Album ID: <span th:text=${album.id}></spanth:text></span></p>
+        <p style="text-align:center; color:white; font-size:x-large">Album Title: <span th:text=${album.title}></span> </p>
+        <p style="text-align:center; color:white; font-size:x-large">Album Artist: <span th:text=${album.artist}></span></p>
+        <p style="text-align:center; color:white; font-size:x-large">Songs Count: <span th:text=${album.songCount}></span></p>
+        <p style="text-align:center; color:white; font-size:x-large">Album Length: <span th:text=${album.length}></span></p>
+        <img style="width: 200px; height:200px;" th:src=${album.imageUrl}>
+        <br>
+        <br>
     </div>
 </div>
 </body>

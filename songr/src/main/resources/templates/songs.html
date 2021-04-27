@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="background-image: url('https://github.com/Aseel-Banna/Full-Stack-Web-Apps/blob/lab13/songr/songr/src/main/resources/songs.jpg?raw=true'); background-repeat: no-repeat;
+  background-size: cover">
+<p></p>
+<h1 style="text-align:center; color:white; font-size:xx-large">All Songs!</h1>
+<div id="did">
+    <div style="text-align:center; margin-left:auto; margin-right:auto; border: 4px solid white; width:500px; height:250px; margin-bottom:20px" th:each="song : ${songs}">
+        <p style="text-align:center; color:white; font-size:x-large">Song ID: <span th:text=${song.id}></span></p>
+        <p style="text-align:center; color:white; font-size:x-large">Song Title: <span th:text=${song.title}></span> </p>
+        <p style="text-align:center; color:white; font-size:x-large">Track Number: <span th:text=${song.trackNumber}></span></p>
+        <p style="text-align:center; color:white; font-size:x-large">Song Length: <span th:text=${song.length}></span></p>
+    </div>
+</div>
+</body>
+</html>
