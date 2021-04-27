@@ -4,25 +4,36 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body>
-<h2>New Album</h2>
-<form action="/albums" method="post">
-    <label>Title</label>
+<body style="background-image: url('https://github.com/Aseel-Banna/Full-Stack-Web-Apps/blob/lab13/songr/songr/src/main/resources/songs.jpg?raw=true'); background-repeat: no-repeat;
+  background-size: cover">
+<p></p>
+<h2 style="text-align:center; color:white; font-size:xx-large">New Album</h2>
+<form action="/albums" method="post" style="text-align:center; border: 5px solid white; width: 750px; margin-left:auto; margin-right:auto">
+    <br>
+    <br>
+    <label style="color:white; font-size:x-large">Title</label>
     <input type="text" name="title" />
-
-    <label>Artist</label>
+    <br>
+    <br>
+    <label style="color:white; font-size:x-large">Artist</label>
     <input type="text" name="artist" />
-
-    <label>Songs Count</label>
+    <br>
+    <br>
+    <label style="color:white; font-size:x-large">Songs Count</label>
     <input type="number" name="songCount" />
-
-    <label>Length</label>
+    <br>
+    <br>
+    <label style="color:white; font-size:x-large">Length</label>
     <input type="number" name="length" />
-
-    <label>Image URL</label>
+    <br>
+    <br>
+    <label style="color:white; font-size:x-large">Image URL</label>
     <input type="text" name="imageUrl" />
-
-    <input type="submit" value="Add Album!">
+    <br>
+    <br>
+    <input type="submit" value="Add Album!" style="color:black; font-size:larger; background-color: white; width: 150px; border: 2px solid pink">
+    <br>
+    <br>
 </form>
 </body>
 </html>
